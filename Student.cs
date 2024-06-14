@@ -11,7 +11,10 @@ namespace Object_Method
         public string name;
         public string major;
         public double gpa;
+        //we can access the private letter through getter
         private string letter;
+
+        public static int studentCount = 0;
 
 
         //Constructor
@@ -20,9 +23,10 @@ namespace Object_Method
             name = aName;
             major = aMajor;
             gpa = aGpa;
-           // letter = aLetter;
-           //we make the Letter be equal to aLetter
-           Letter = aLetter;
+            // letter = aLetter;
+            //we make the Letter be equal to aLetter
+            Letter = aLetter;
+            studentCount++;
         }
 
         //Getter / Setter
